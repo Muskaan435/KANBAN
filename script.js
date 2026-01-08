@@ -2,6 +2,9 @@ const todo = document.querySelector('#todo');
 const progress = document.querySelector('#progress');
 const done = document.querySelector('#done');
 let draggedElement = null;
+const toggleModalButton =document.querySelector("#toggle-modal");
+const modal = document.querySelector(".modal");
+const modalBg = document.querySelector(".bg")
 
 const tasks = document.querySelectorAll('.task');
 
@@ -30,6 +33,14 @@ function addDragEvent(column){
 
     })
 }
+//add task logic
+toggleModalButton.addEventListener("click", ()=>{
+    modal.classList.toggle("active");
+} )
+//add task logic
+modalBg.addEventListener("click" ,()=>{
+    modal.classList.remove("active");
+})
 addDragEvent(todo);
 addDragEvent(progress);
 addDragEvent(done);
