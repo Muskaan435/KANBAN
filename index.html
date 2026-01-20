@@ -13,6 +13,7 @@
             <div class="right"><button id="toggle-modal">Add new Task</button></div>
         </nav>
         <section class="board">
+            <!-- blue -->
             <div id="todo" class="task-column">
                 <div class="headding">
                     <div class="left">To Do</div>
@@ -22,16 +23,18 @@
                     <div class="task-title">
                         <h2>task 1</h2>
                         <p>Description for Task 1</p>
-                        <button>Delete</button>
+                        <button id="delete-button">Delete</button>
                     </div>
                 </div>
             </div>
+            <!-- yellow -->
             <div id="progress" class="task-column">
                 <div class="headding">
                     <div class="left">In Process</div>
                     <div class="right">count</div>
                 </div>
             </div>
+            <!-- Green -->
             <div id="done" class="task-column">
                 <div class="headding">
                     <div class="left">Done</div>
@@ -44,9 +47,9 @@
     <div class="modal add-new-task">
         <div class="bg"></div>
         <div class="center">
-            <input type="text" name="" id="" placeholder="Task=title">
-            <textarea name="" placeholder="Task Description" id=""></textarea>
-            <button class="add-task-button" id="add-task-button">Add Task</button>
+            <input type="text" name="" id="task-title-input" placeholder="Task-title">
+            <textarea name="" placeholder="Task Description" id="task-description-input"></textarea>
+            <button class="add-task-button" id="add-new-button">Add Task</button>
         </div>        
     </div>
     

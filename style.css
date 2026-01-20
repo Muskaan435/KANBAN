@@ -103,7 +103,7 @@ section .task-column .task .task-title{
     display: flex;
     flex-direction: column;
 }
-section .task-column .task .task-title button{
+#delete-button{
     align-self: flex-end;
     cursor: pointer;
     padding: var(--padding-s) var(--padding-m);
