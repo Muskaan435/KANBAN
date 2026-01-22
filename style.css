@@ -52,6 +52,9 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
 }
 nav button{
     background-color: var(--bg-button-color);
@@ -76,6 +79,7 @@ section .task-column{
     display: flex;
     flex-direction: column;
     gap: var(--padding-m);
+    width: 100%;
     transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
 }
 section .task-column.hover-over{
@@ -103,7 +107,7 @@ section .task-column .task .task-title{
     display: flex;
     flex-direction: column;
 }
-#delete-button{
+.delete-button{
     align-self: flex-end;
     cursor: pointer;
     padding: var(--padding-s) var(--padding-m);

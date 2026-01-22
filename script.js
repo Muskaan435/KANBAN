@@ -17,12 +17,19 @@ function addTask(title, desc, column){
     div.innerHTML=`
         <h2>${title}</h2>
         <p>${desc}</p>
-        <button id="delete-button">Delete</button>
+        <button class="delete-button">Delete</button>
     `;
     column.appendChild(div);
 
     div.addEventListener("dragstart", (e)=>{
         draggedElement = div;
+    })
+
+    const deleteButton = div.querySelector(".delete-button");
+    deleteButton.addEventListener("click", ()=>{
+        div.remove();
+        columns.forEach(col => updateTaskCount(col));
+        saveTasks();
     })
 
     return div;
@@ -108,10 +115,11 @@ addTaskButton.addEventListener("click", ()=>{
         }
     )
 
-    div.addEventListener("dragstart", (e)=>{
-        draggedElement = div;
-    } )
     modal.classList.remove("active");
+
+    document.querySelector("#task-title-input").value = "";
+    document.querySelector("#task-description-input").value = "";
+
     saveTasks();
 })
 //add task button logic
