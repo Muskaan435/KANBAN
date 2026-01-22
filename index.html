@@ -8,44 +8,58 @@
 </head>
 <body>
     <main>
+        <!-- Navbar -->
         <nav>
             <div class="left">Kanban</div>
-            <div class="right"><button id="toggle-modal">Add new Task</button></div>
+            <div class="right">
+                <!-- Button to open modal for adding new task -->
+                <button id="toggle-modal">Add new Task</button>
+            </div>
         </nav>
+        <!-- Kanban Board Section -->
         <section class="board">
             <!-- blue -->
             <div id="todo" class="task-column">
                 <div class="headding">
                     <div class="left">To Do</div>
-                    <div class="right">count</div>
+                    <div class="right">count</div><!-- Task count displayed here -->
                 </div>
+                 <!-- Tasks will be dynamically appended here -->
             </div>
-            <!-- yellow -->
+            <!-- In Progress Column (Yellow) -->
             <div id="progress" class="task-column">
                 <div class="headding">
                     <div class="left">In Process</div>
-                    <div class="right">count</div>
+                    <div class="right">count</div><!-- Task count displayed here -->
                 </div>
             </div>
             <!-- Green -->
             <div id="done" class="task-column">
                 <div class="headding">
                     <div class="left">Done</div>
-                    <div class="right">count</div>
+                    <div class="right">count</div><!-- Task count displayed here -->
                 </div>
             </div>
         </section>
     </main>
+    <!-- Modal for adding new tasks -->
 
     <div class="modal add-new-task">
+        <!-- Background overlay for modal -->
         <div class="bg"></div>
+
+        <!-- Modal content container -->
         <div class="center">
+            <!-- Input for task title -->
             <input type="text" name="" id="task-title-input" placeholder="Task-title">
+            <!-- Textarea for task description -->
             <textarea name="" placeholder="Task Description" id="task-description-input"></textarea>
+            <!-- Button to add task -->
             <button class="add-task-button" id="add-new-button">Add Task</button>
         </div>        
     </div>
     
+    <!-- Link to external JS -->
     <script src="script.js"></script>
 </body>
 </html>
