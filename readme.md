@@ -1,10 +1,10 @@
-## Kanban Board
+# Kanban Board
 
 A simple Kanban Board web application built using HTML, CSS, and Vanilla JavaScript.
 
 It helps users manage tasks visually by organizing them into To Do, In Process, and Done columns.
 
-# Features
+## Features
 1. Add new tasks with a title and description
 2. Drag and drop tasks between columns
 3. Delete tasks easily
@@ -13,7 +13,7 @@ It helps users manage tasks visually by organizing them into To Do, In Process, 
 6. Clean and modern dark UI
 
 
-# Technologies Used
+## Technologies Used
 1. HTML5 – Structure
 2. CSS3 – Styling and layout
 3. JavaScript (ES6) – Logic, drag & drop, LocalStorage
