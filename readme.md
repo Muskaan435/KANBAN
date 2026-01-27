@@ -29,6 +29,21 @@ kanban-board/
 └── README.md       # Project documentation
 
 
+▶️ How to Run the Project
+Download or clone the repository
+Open index.html in any modern web browser
+Start adding and managing your tasks 🎯
+No installation or dependencies required.
+
+
+🧠 How It Works
+New tasks are always added to the To Do column
+Tasks can be dragged between columns
+All tasks are saved in LocalStorage
+Task counts update automatically when tasks move or delete
+
+
+
 👤 Author
 Muskan pichhode
 Frontend Developer
